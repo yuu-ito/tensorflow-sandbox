@@ -1,0 +1,8 @@
+#version: '2'
+#services:
+  note:
+    build: .
+    volumes:
+      - ./local-notes:/notebooks/local-notes 
+    ports:
+      - "8888:8888"
